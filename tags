@@ -1,0 +1,71 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+format_args_python	tdw_client.py	15;"	f
+format_args_unity	tdw_client.py	29;"	f
+find_free_port	tdw_client.py	44;"	f
+TDWClient	tdw_client.py	53;"	c
+__init__	tdw_client.py	54;"	m	class:TDWClient
+get_ports	tdw_client.py	121;"	m	class:TDWClient
+get_output_socket	tdw_client.py	124;"	m	class:TDWClient
+get_input_socket	tdw_client.py	135;"	m	class:TDWClient
+get_render_socket	tdw_client.py	143;"	m	class:TDWClient
+close_input_socket	tdw_client.py	150;"	m	class:TDWClient
+close_output_socket	tdw_client.py	155;"	m	class:TDWClient
+close_render_socket	tdw_client.py	160;"	m	class:TDWClient
+quit	tdw_client.py	165;"	m	class:TDWClient
+logger	environment.py	26;"	v
+hdlr	environment.py	27;"	v
+fmtr	environment.py	28;"	v
+key_image_data	environment.py	34;"	v
+key_avatar_data	environment.py	35;"	v
+key_observed_object_data	environment.py	36;"	v
+key_time	environment.py	37;"	v
+key_avatar_children_data	environment.py	38;"	v
+key_object_data	environment.py	39;"	v
+key_sensor_name_sensor_container	environment.py	42;"	v
+key_sensor_name_follow_camera	environment.py	43;"	v
+keys_head_pose	environment.py	46;"	v
+keys_arm_pose	environment.py	47;"	v
+DEFAULT_SCENE_OBJECTS	environment.py	49;"	v
+hardcode_circular_switch_coordinate	environment.py	52;"	f
+Environment	environment.py	62;"	c
+__init__	environment.py	63;"	m	class:Environment
+get_unique_id	environment.py	149;"	m	class:Environment
+do_nothing	environment.py	152;"	m	class:Environment
+generate_x	environment.py	155;"	m	class:Environment
+generate_z	environment.py	181;"	m	class:Environment
+generate_det_z	environment.py	206;"	m	class:Environment
+generate_det_x	environment.py	217;"	m	class:Environment
+generate_y	environment.py	227;"	m	class:Environment
+get_color	environment.py	235;"	m	class:Environment
+make_obj_layout	environment.py	238;"	m	class:Environment
+make_det_obj_layout	environment.py	255;"	m	class:Environment
+set_object_masses	environment.py	272;"	m	class:Environment
+make_avatar_layout	environment.py	279;"	m	class:Environment
+_scale_action	environment.py	335;"	m	class:Environment
+get_scaled_value_helper	environment.py	339;"	f	function:Environment._scale_action
+_action_to_message	environment.py	404;"	m	class:Environment
+_add_actions_to_message	environment.py	415;"	m	class:Environment
+update_vec_dict	environment.py	416;"	f	function:Environment._add_actions_to_message
+_check_coordinates	environment.py	439;"	m	class:Environment
+_handle_message	environment.py	474;"	m	class:Environment
+_observe_world	environment.py	880;"	m	class:Environment
+_send	environment.py	903;"	m	class:Environment
+send_init	environment.py	923;"	m	class:Environment
+reset_attributes	environment.py	935;"	m	class:Environment
+reset	environment.py	956;"	m	class:Environment
+_quit	environment.py	1060;"	m	class:Environment
+_termination_condition	environment.py	1066;"	m	class:Environment
+step	environment.py	1086;"	m	class:Environment
+Action	environment.py	1113;"	c
+__init__	environment.py	1114;"	m	class:Action
+_action_vec_to_dict	environment.py	1120;"	m	class:Action
+assign_vars_from_act_dict	environment.py	1129;"	m	class:Action
+environment_params	environment.py	1137;"	v
+keys	environment.py	1168;"	v
+env	environment.py	1171;"	v
+running	environment.py	1173;"	v
