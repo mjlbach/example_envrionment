@@ -526,7 +526,6 @@ class Environment(object):
             msg_dict_list.append(message_dict)
             #print(message_dict['$type'])
         print('______________________')
-
         if obj_msg:
             for i in range(12):
                 print((obj_msg[0]['objects'][i]['name'],obj_msg[0]['objects'][i]['center']))
@@ -808,40 +807,31 @@ class Environment(object):
                                    return_data['object_ids'].index('a2'),
                                    return_data['object_ids'].index('a3'),
                                    return_data['object_ids'].index('a4')]
-
                 avatar_name_list = ['animate', 'periodic', 'random', 'static']
-
                 # Default avatar_pos
                 avatar_pos = [0., 0.]
                 non_avatar_pos =[]
-
                 # If more than one agent in view at a time, then raise an error
                 if np.count_nonzero(return_data['num_seen_avatars'].values()) > 1:
                     print("CRITICAL ERROR: More than one environment agent in view at a time")
                     #exit(1)
-
                 else:
                     for i, avatar_idx in enumerate(avatar_idx_list):
                         if return_data['num_seen_avatars'][avatar_name_list[i]]:
                             #print("Agent in view: {}".format(avatar_name_list[i]))
                             avatar_pos = [return_data['object_centers'][avatar_idx]['x'],
                                           return_data['object_centers'][avatar_idx]['z']]
-
                 for i, object_center in enumerate(return_data['object_centers']):
                     if return_data['object_type'][i] == 'kettle_0':
                         non_avatar_pos += [object_center['x'], object_center['z']]
-
-
                 # Rotate to coordinates in agent's frame of reference
                 pi_ang = 2* np.pi * self.avatar_rotation / 360.
                 rot_mat = np.array([[np.cos(pi_ang), -np.sin(pi_ang)], [np.sin(pi_ang), np.cos(pi_ang)]])
                 avatar_pos = np.array(avatar_pos)
                 avatar_pos = list(np.matmul(rot_mat, avatar_pos))
-
                 # Mask the loss
                 if avatar_pos == [0., 0.]:
                     return_data['explicit_coord'] = np.array(avatar_pos + [0] + list(np.sort(non_avatar_pos)) + [(self.avatar_rotation - 180.)/90.])
-
                 else:
                     return_data['explicit_coord'] = np.array(avatar_pos + [1.] + list(np.sort(non_avatar_pos)) + [(self.avatar_rotation - 180.)/90.])
                 '''
@@ -903,7 +893,6 @@ class Environment(object):
     def _send(self, message):
         """
         Sends a multipart message to the server.
-
         :param message: The message to send. This may be 1 message or a list of messages.
         """
 
@@ -923,7 +912,6 @@ class Environment(object):
     def send_init(self, sock, commands):
         """
         Send an init command to the build.
-
         :param sock: The sending socket.
         :param commands: The commands.
         """
@@ -1066,7 +1054,6 @@ class Environment(object):
     def _termination_condition(self):
         '''
         pprint.pprint(self.observation)
-
         # check if avatar in bounds
         avatar_pos = self.observation['avatar_data']['position']
         avatar_pos = [float(avatar_pos[pos]) for pos in ['x', 'y', 'z']]

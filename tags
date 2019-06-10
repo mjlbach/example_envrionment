@@ -4,6 +4,66 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+synset_for_table	box_environment.py	27;"	v
+rollie_synsets	box_environment.py	29;"	v
+other_vaguely_stackable_synsets	box_environment.py	37;"	v
+shapenet_inquery	box_environment.py	63;"	v
+dosch_inquery	box_environment.py	75;"	v
+default_keys	box_environment.py	88;"	v
+table_query	box_environment.py	98;"	v
+rolly_query	box_environment.py	100;"	v
+other_reasonables_query	box_environment.py	102;"	v
+query_dict	box_environment.py	105;"	v
+query_results_to_unity_data	box_environment.py	113;"	f
+init_msg	box_environment.py	144;"	f
+convert_to_float_list	box_environment.py	162;"	f
+particle_interaction_helper	box_environment.py	166;"	f
+ObjectTeleport	box_environment.py	195;"	v
+object_teleport_helper	box_environment.py	198;"	f
+SHADERS	box_environment.py	216;"	v
+HDF5_NAMES	box_environment.py	218;"	v
+SHADERS_DEPTH	box_environment.py	221;"	v
+HDF5_NAMES_DEPTH	box_environment.py	222;"	v
+SHADERS_LONG	box_environment.py	224;"	v
+HDF5_NAMES_LONG	box_environment.py	236;"	v
+Environment	box_environment.py	250;"	c
+__init__	box_environment.py	251;"	m	class:Environment
+reset	box_environment.py	254;"	m	class:Environment
+step	box_environment.py	257;"	m	class:Environment
+TDWClientEnvironment	box_environment.py	265;"	c
+__init__	box_environment.py	281;"	m	class:TDWClientEnvironment
+_create_hdf5_file	box_environment.py	361;"	m	class:TDWClientEnvironment
+_create_hdf5_fields	box_environment.py	373;"	m	class:TDWClientEnvironment
+_make_record	box_environment.py	390;"	m	class:TDWClientEnvironment
+init_tdw_client	box_environment.py	401;"	m	class:TDWClientEnvironment
+get_items	box_environment.py	415;"	m	class:TDWClientEnvironment
+reset	box_environment.py	441;"	m	class:TDWClientEnvironment
+_construct_hierarchical_representation	box_environment.py	573;"	m	class:TDWClientEnvironment
+get_grouping	box_environment.py	600;"	m	class:TDWClientEnvironment
+assign_particles_to_objects	box_environment.py	605;"	m	class:TDWClientEnvironment
+write_image_to_path	box_environment.py	618;"	m	class:TDWClientEnvironment
+_observe_world	box_environment.py	623;"	m	class:TDWClientEnvironment
+handle_message_new	box_environment.py	682;"	m	class:TDWClientEnvironment
+_termination_condition	box_environment.py	719;"	m	class:TDWClientEnvironment
+step	box_environment.py	722;"	m	class:TDWClientEnvironment
+tdw_environment	box_environment.py	756;"	v	class:TDWClientEnvironment
+decode_xyz_vector	io3.py	14;"	f
+decode_xyzw_vector	io3.py	19;"	f
+decode_info	io3.py	24;"	f
+decode_image	io3.py	43;"	f
+decode_particles	io3.py	50;"	f
+decode_static_particles	io3.py	54;"	f
+add_static_particle_info	io3.py	60;"	f
+decode_segmentation_image	io3.py	70;"	f
+decode_depth_image	io3.py	74;"	f
+recv_with_timeout	io3.py	83;"	f
+receive_message	io3.py	90;"	f
+decode_message	io3.py	112;"	f
+handle_message	io3.py	139;"	f
+send_message	io3.py	144;"	f
+is_valid_action_message	io3.py	149;"	f
+ObjectId	old_assets_query_result_example.py	4;"	v
+query_res	old_assets_query_result_example.py	7;"	v
 format_args_python	tdw_client.py	15;"	f
 format_args_unity	tdw_client.py	29;"	f
 find_free_port	tdw_client.py	44;"	f
@@ -53,19 +113,19 @@ _add_actions_to_message	environment.py	415;"	m	class:Environment
 update_vec_dict	environment.py	416;"	f	function:Environment._add_actions_to_message
 _check_coordinates	environment.py	439;"	m	class:Environment
 _handle_message	environment.py	474;"	m	class:Environment
-_observe_world	environment.py	880;"	m	class:Environment
-_send	environment.py	903;"	m	class:Environment
-send_init	environment.py	923;"	m	class:Environment
-reset_attributes	environment.py	935;"	m	class:Environment
-reset	environment.py	956;"	m	class:Environment
-_quit	environment.py	1060;"	m	class:Environment
-_termination_condition	environment.py	1066;"	m	class:Environment
-step	environment.py	1086;"	m	class:Environment
-Action	environment.py	1113;"	c
-__init__	environment.py	1114;"	m	class:Action
-_action_vec_to_dict	environment.py	1120;"	m	class:Action
-assign_vars_from_act_dict	environment.py	1129;"	m	class:Action
-environment_params	environment.py	1137;"	v
-keys	environment.py	1168;"	v
-env	environment.py	1171;"	v
-running	environment.py	1173;"	v
+_observe_world	environment.py	870;"	m	class:Environment
+_send	environment.py	893;"	m	class:Environment
+send_init	environment.py	912;"	m	class:Environment
+reset_attributes	environment.py	923;"	m	class:Environment
+reset	environment.py	944;"	m	class:Environment
+_quit	environment.py	1048;"	m	class:Environment
+_termination_condition	environment.py	1054;"	m	class:Environment
+step	environment.py	1073;"	m	class:Environment
+Action	environment.py	1100;"	c
+__init__	environment.py	1101;"	m	class:Action
+_action_vec_to_dict	environment.py	1107;"	m	class:Action
+assign_vars_from_act_dict	environment.py	1116;"	m	class:Action
+environment_params	environment.py	1124;"	v
+keys	environment.py	1155;"	v
+env	environment.py	1158;"	v
+running	environment.py	1160;"	v
